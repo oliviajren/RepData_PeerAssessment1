@@ -2,7 +2,8 @@
 title: "PA1_template"
 author: "Jie_Ren"
 date: "13/02/2018"
-output: html_document
+output: html_document:
+   keep = md
 ---
 
 **Default setting**
