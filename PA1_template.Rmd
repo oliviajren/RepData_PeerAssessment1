@@ -2,8 +2,7 @@
 title: "PA1_template"
 author: "Jie_Ren"
 date: "13/02/2018"
-output: html_document:
-   keep = md
+output: html_document 
 ---
 
 **Default setting**
@@ -22,6 +21,7 @@ library(ggplot2)
 library(scales)
 library(Hmisc)
 library(gridExtra)
+library(knitr)
 ```
 
 ## Loading and preprocessing the data
@@ -60,11 +60,9 @@ ggplot(activitysum, aes(x=date, y=steps)) +
 # Daily result
 ## Method 1
 stepmedian<- aggregate(activityona["steps"], by=activityona["date"], median)
-stepmedian
 stepmean <- aggregate(activityona["steps"], by=activityona["date"], mean)
-stepmean
 ## Method 2
-aggregate(steps ~ date, data = activityona, summary)
+stepsummary <-aggregate(steps ~ date, data = activityona, summary)
 
 # Total result
 mean(activitysum$steps)
