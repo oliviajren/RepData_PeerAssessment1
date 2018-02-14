@@ -75,7 +75,7 @@ ggplot(activitysum, aes(x=date, y=steps)) +
 stepmedian<- aggregate(activityona["steps"], by=activityona["date"], median)
 stepmean <- aggregate(activityona["steps"], by=activityona["date"], mean)
 ## Method 2
-stepsummary <- aggregate(steps ~ date, data = activityona, summary)
+stepsummary <-aggregate(steps ~ date, data = activityona, summary)
 
 # Total result
 mean(activitysum$steps)
