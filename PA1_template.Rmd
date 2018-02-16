@@ -1,8 +1,9 @@
 ---
 title: "PA1_template"
 author: "Jie_Ren"
-date: "13/02/2018"
-output: github_document
+date: "16/02/2018"
+output: 
+  html_document
 ---
 
 **Default setting**
